@@ -8,7 +8,7 @@ import { usePuterStore } from "~/lib/puter";
 import { generateUUID } from "~/lib/utils";
 
 const Upload = () => {
-    const {auth,fs,isLoading,ai,kv}=usePuterStore();
+    const {auth,fs,isLoading,ai,kv}=usePuterStore();  //kv is stand for key value storage
     const navigate=useNavigate();
   const [isProcessing, setIsProcessing] = useState(false);
   const [statusText, setStatusText] = useState("");
