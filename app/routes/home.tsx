@@ -4,6 +4,8 @@ import ResumeCard from "~/components/ResumeCard";
 import { usePuterStore } from "~/lib/puter";
 import { Link, useNavigate } from "react-router";
 import { useEffect, useState } from "react";
+import Footer from "~/components/Footer";
+import FAQ from "~/components/FAQ";
 
 
 export function meta({}: Route.MetaArgs) {
@@ -43,10 +45,10 @@ export default function Home() {
     },[])
 
     
-  return <main className="bg-[url('images/bg-main.svg')] bg-cover">
+  return <main className="bg-[url('images/bg-main.svg')]">
     <Navbar/>
     <section className="main-section">
-      <div className="page-heading">
+      <div className="page-heading mb-10">
       
         <h1 > Track Your Application & Resume Ratings</h1>
         {!loadResumes && resumes?.length===0?(
@@ -62,11 +64,18 @@ export default function Home() {
           </div>
       )}
        { !loadResumes && resumes.length > 0 && (
+        <div>
+          <h2 className="text-4xl font-bold mb-6 text-center text-black!">
+              Your All Resumes
+            </h2>
+     
         <div className="resumes-section">
+
           {resumes.map((resume) => (
               <ResumeCard key={resume.id} resume={resume} />
           ))}
         </div>
+           </div>
       )}
 
       {!loadResumes && resumes?.length===0 && (
@@ -76,5 +85,7 @@ export default function Home() {
       )}
 
     </section>
+    <FAQ/>
+    <Footer/>
   </main> ;
 }
