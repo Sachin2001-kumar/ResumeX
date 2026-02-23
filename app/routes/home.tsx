@@ -45,7 +45,11 @@ export default function Home() {
     },[])
 
     
-  return <main className="bg-[url('images/bg-main.svg')]">
+  return <main className="pt-32 bg-[url('/images/bg-new2.jpg')] 
+                 bg-cover 
+                 bg-center 
+                 bg-no-repeat 
+                 min-h-screen">
     <Navbar/>
     <section className="main-section">
       <div className="page-heading mb-10">
@@ -60,7 +64,7 @@ export default function Home() {
       </div>
       {loadResumes && (
           <div className="flex flex-col items-center justify-center">
-            <img src="/images/resume-scan-2.gif" className="w-50" />
+            <img src="/images/resume-scanner.gif" className="w-50" />
           </div>
       )}
        { !loadResumes && resumes.length > 0 && (

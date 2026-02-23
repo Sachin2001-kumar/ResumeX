@@ -10,7 +10,7 @@ import { faqData } from "~/lib/data";
 
 const FAQ = () => {
   return (
-    <section className="w-full bg-blue-100 py-12">
+    <section className="w-full bg-transparent py-12">
 
       <div className="max-w-6xl mx-auto px-4">
 

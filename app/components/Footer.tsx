@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-300 border-t">
-      <div className="max-w-7xl mx-auto px-6 py-16">
+    <footer className="bg-gray-400 border-t">
+      <div className="max-w-7xl mx-auto px-6 py-8">
         <div className="flex flex-col sm:flex-row justify-between gap-12">
           <div>
             <h3 className="text-lg font-semibold mb-6">Get started</h3>
@@ -30,15 +30,12 @@ const Footer = () => {
               <li>Blog</li>
               <li>Resume Guides</li>
               <li>Cover Letter Guides</li>
-              <li>Job Interview Guides</li>
-              <li>Job Interview Questions</li>
-              <li>Career Resources</li>
             </ul>
           </div>
         </div>
 
         {/* Bottom Copyright */}
-        <div className="border-t mt-16 pt-6 text-sm text-gray-800 text-center">
+        <div className="border-t mt-10 pt-6 text-sm text-gray-900 text-center">
           © {new Date().getFullYear()} ResumeX. All rights reserved.
         </div>
       </div>

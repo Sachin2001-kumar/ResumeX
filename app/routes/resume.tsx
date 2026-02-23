@@ -73,7 +73,7 @@ const resume = () => {
             {/* <Details feedback={feedback}/> */}
             </div>
           ):(
-            <img src='public/images/resume-scan-2.gif' alt='scanning-resume' className='w-full'/>
+            <img src='/images/resume-scanner.gif' alt='scanning-resume' className='w-full'/>
           )}
         </section>
        
